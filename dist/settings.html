@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://kit.fontawesome.com/67f4f70c85.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+    <title>Account Settings</title>
+</head>
+<body>
+<!-- Shares similar features from the previous modal! -->
+<div id="id04" class="modal">
+  <!-- Create Account menu -->
+  <div class="modal-content">
+    <span onclick="document.getElementById('id04').style.display='none'" class="close" title="Close Menu">&times;</span>
+    <div class="container">
+      <h1 style="text-align: center;">Update User Account Information</h1>
+      <label class="rememberBtn">
+          <p>Warning: You are going to update your user account information, please be advised this is going to take a while to process the updated
+              information. If you are experiencing login issues, please wait a few hours before attempting to log back in.
+          </p>
+      </label>
+      <a href="/dist/settings.html">
+      <button type="submit" class="register" >Proceed</button>
+      </a>
+      <a href="/dist/settings.html">
+      <button type="submit" class="register" >Return</button>
+      </a>
+    </div>
+  </div>
+</div>
+  <div class="container-fluid">
+      <div class="row">
+            <div class="col-lg-9">
+                  <div class="container-fluid">
+                    <div class="row">
+                      <div id="mySidenav" class="sidenav">
+                        <h2>Account Menu</h2>
+                        <hr>
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <a class="underline-anim" href="#"><i class="fa-regular fa-house-chimney"></i> Home </a>
+                        <a class="active" href="#"><i class="fa-regular fa-user"></i> My Account </a>
+                        <a class="underline-anim" href="/dist/courses.html"><i class="fa-regular fa-plus"></i> More courses </a>
+                        <a class="underline-anim" href="#"><i class="fa-regular fa-calendar"></i> Events </a>
+                        <a class="underline-anim" href="#"><i class="fa-regular fa-newspaper"></i> Articles </a>
+                        <a class="underline-anim" href="#"><i class="fa-regular fa-circle-question"></i> Help </a>
+                        <div class="logout-btn-container">
+                          <a href="/dist/indexsignedout.html">
+                            <button onclick="document.getElementById('').style.display='block' "class="sign-out" style="width:auto;">Log Out</button>   
+                          </a>
+                        </div>    
+                      </div>
+                      <div id="main">
+                        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+                      </div>  
+                    </div>
+                  </div>
+            </div>
+      </div>
+  </div>
+  
+  <div class="container">
+    <div class="start">
+    <h1>Account Settings</h1>
+    <p>If you want to update any account information, you can change the current
+        information, and then click the "Update" button below which will then suspended
+        a confirmation email which will ask if you wanted to update your information or
+        not. <p>
+    </div>
+    <div class="row">
+      <div class="col-sm">
+        <div class="container-sm">
+            <form class="account-settings">
+                <label for="text">First Name:</label>
+                <input type="text" placeholder="Update First Name" id="fname" name="fname">
+                <label for="fphone">Current Phone: </label>
+                <input type="number" placeholder="Update Phone Number" id="fname" name="fname">
+                <label for="fname">Update Password </label>
+                <input type="password" placeholder="Update Password" id="fname" name="fname">
+              </form>
+        </div>
+      </div>
+    <div class="col-sm">
+        <div class="container-sm">
+            <form class="account-settings">
+                <label for="fname">Last Name: </label>
+                <input type="text" placeholder="Update Last Name" id="fname" name="fname">
+                <label for="fname">Current Email Address: </label>
+                <input type="email" placeholder="Update Email Address" id="fname" name="fname">
+                <label for="fname">Confirm Password </label>
+                <input type="password" placeholder="Confirm Password again" id="fname" name="fname">
+            </form>
+        </div>
+    </div>
+    </div>
+    <div class="extra">
+        <div class="row">
+            <div class="social-media">
+                <button onclick="document.getElementById('id04').style.display='block' "class="sign-up animation" style="width:auto;"> Update Account Info</button>
+                <p>Please note, updated informationt takes a few hours to update!</p>
+                <h2>Link my Social Media Accounts</h2>
+                <div class="icon-container">
+                    <a href="https://www.facebook.com/NHSwebsite" target="_new" class="fa fa-facebook"></a>
+                    <a href="https://twitter.com/nhsengland" target="_new" class="fa fa-twitter"></a>
+                    <a href="https://www.instagram.com/accounts/login/?next=/nhs/" target="_new" class="fa fa-instagram"></a>
+                    <a href="https://accounts.google.com/servicelogin" target="_new" class="fa fa-google-plus"></a>
+                    <p class="text-warning:"><b>Warning:</b> Clicking on these will take you to an external website, allow permission to sync with
+                    your social media account!</p>
+                  </div>
+                  <p>Setup Google Authenticator with your account to allow you to track people who log into your account</p>
+                  <a href="https://support.google.com/accounts/answer/1066447?hl=en&co=GENIE.Platform%3DAndroid">
+                    <button onclick="document.getElementById('id04').style.display='block' "class="sign-up animation" style="width:auto;"> Google Authenticator</button>
+                  </a>
+            </div>
+
+            <div class="account-container-btn">
+                <p><b>Warning: This does not delete your account, if you wish to delete your
+                    account please follow the instructions in the email, this will allow you to delete your account!
+                </b> </p>
+                <button onclick="document.getElementById('id01').style.display='block' "class="warning" style="width:auto;">Deactivate Account</button>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+<style>
+.modal-content animate {
+padding-left: 50px;
+padding-right: 50px;
+}
+
+.modal {
+display: none;
+position: fixed;
+z-index: 1;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+overflow: hidden;
+background-color: black;
+background-color: rgba(0, 0, 0, 0.4);
+padding-top: 60px;
+}
+
+.modal-content {
+background-color: rgba(0, 0, 0, 0.9);
+margin: 5% auto 15% auto;
+border: #2a9df4;
+width: 80%;
+}
+
+.close {
+position: absolute;
+right: 25px;
+top: 0;
+color: #fff;
+font-size: 35px;
+font-weight: bold;
+}
+
+.close:hover, .close:focus {
+color: #2a9df4;
+cursor: pointer;
+}
+</style>
+
+
+ <!-- Footer -->
+    <div class="footer-container">
+        <footer>
+          <div class="container">
+            <div class="row">
+              <div class="col-sm">
+                <!-- General -->
+                <h1>Links</h1>
+                <a href="https://www.england.nhs.uk/news/" target="_new">More links</a>
+                <br>
+                <a href="https://www.england.nhs.uk/urgent-emergency-care/nhs-111/#:~:text=To%20get%20help%20from%20NHS,a%20landline%20or%20mobile%20phone." target="_new" >Seek Help Online</a>
+                <br>
+                <a href="https://www.nhs.uk" target="_new" >NHS</a>
+                <br>
+                <a href="/dist/privacy.html" target="_new" >Terms and Privacy</a>
+              </div>
+              <!-- End of General -->
+              <div class="col-sm">
+                <h1>Links</h1>
+                <a href="#">Create an Account</a>
+                <br>
+                <a href="https://www.health.com" target="_new" >Free Health Magazines</a>
+                <br>
+                <a href="https://societyforpsychotherapy.org/ask-ethicist-request-anonymous-consultation/" target="_new" >Anonymous Consultation</a>
+                <br>
+                <a href="https://abi.ai/en_GB" target="_new" >Online Chat</a>
+              </div>
+              <div class="col-sm">
+                <h1>Links</h1>
+                <a href="https://www.google.co.uk/maps" target="_new" >Search Areas Near You</a>
+                <br>
+                <a href="#" target="_new" >Gyms Near you</a>
+                <br>
+                <a href="#" target="_new" >Newsletter</a>
+                <br>
+                <a href="#" target="_new" >Register Email</a>
+              </div>
+            </div>
+          </div>
+  
+        <div class="icon-container">
+          <a href="https://www.facebook.com/NHSwebsite" target="_new" class="fa fa-facebook"></a>
+          <a href="https://twitter.com/nhsengland" target="_new" class="fa fa-twitter"></a>
+          <a href="https://www.instagram.com/accounts/login/?next=/nhs/" target="_new" class="fa fa-instagram"></a>
+          <a href="https://accounts.google.com/servicelogin" target="_new" class="fa fa-google-plus"></a>
+          <p class="text-warning:"><b>Warning:</b> Clicking on these will take you to an external website (All are verified)</p>
+        </div>
+        </footer>
+    </div>
+
+<!-- These two are inactive -->
+<!-- Shares similar features from the previous modal! -->
+<div id="createAccont" class="modal">
+  <!-- Create Account menu -->
+  <div class="modal-content">
+    <span onclick="document.getElementById('createAccont').style.display='none'" class="close" title="Close Menu">&times;</span>
+    <div class="container">
+      <h1 style="text-align: center;">Create Account</h1>
+      <label for="uname"><b>First Name:</b></label>
+      <input type="text" id="firstname" placeholder="Enter your First Name" name="uname" required>
+      <label for="psw"><b>Last Name:</b></label>
+      <input type="text" id="lastname" placeholder="Enter your Last Name" name="uname" required>
+      <label for="psw"><b>Password</b></label>
+      <input type="password" id="password" placeholder="Password" name="psw" required>
+      <label for="psw"><b>Email Address:</b></label>
+      <input type="text" id="useremail" placeholder="Email Address" name="email" required>
+      <!-- Terms and privacy agreement box -->
+      <br>
+      <label class="rememberBtn">
+        <input required type="checkbox" name="remember"> I agree to the <a href="/dist/privacy.html" target="_new">terms & privacy</a>
+      </label>
+                  <!-- For Google Captcha -->
+      <button class="g-recaptcha" 
+      data-sitekey="reCAPTCHA_site_key" 
+      data-callback='onSubmit' 
+      data-action='submit'>Submit</button>
+        
+      <button type="submit" id="signup" class="lgn" >Register</button>
+    </div>
+  </div>
+</div>
+  
+  <!-- End of top menu bar -->
+
+<!-- User Login menu -->
+<div id="loginAccount" class="modal"> 
+  <form class="modal-content animate">
+    <div class="warning-info">
+      <span onclick="document.getElementById('loginAccount').style.display='none'" class="close" title="Close Menu">&times;</span>
+     <h1>Login</h1>
+      <br>
+      <p>Please note, sharing passwords is stricly forbidden on the website
+    and can lead to the account being hacked or suspended. You can use the family settings to create an account
+  </p>
+    </div>
+    <div class="container">
+      <label for="uname"><b>Email:</b></label>
+      <input type="text" placeholder="Enter Email" name="uname" required>
+      <label for="psw"><b>Password:</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+      <button type="submit" class="lgn" id="login" >Login</button>
+      <label class="rememberBtn">
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+      <button class="g-recaptcha" 
+        data-sitekey="reCAPTCHA_site_key" 
+        data-callback='onSubmit' 
+        data-action='submit'>Submit</button>
+      <br>
+      <span class="create-account">Click here to <a href="createAccount">Create Account</a></span>
+    </div>
+    <div class="container">
+      <button type="button" onclick="document.getElementById('loginAccount').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="forgot-password">Click here if you <a href="#fgtpass">Forgot Password</a></span>
+    </div>
+  </form>
+</div>
+
+
+
+
+
+<!-- End of footer -->
+  
+  <script src="/js/main.js"></script>
+  <script src="https://www.google.com/recaptcha/api.js"></script>
+      
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.8/firebase-app.js";
+    import { getDatabase, set, ref, update } from "https://www.gstatic.com/firebasejs/9.6.8/firebase-database.js";
+    import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.6.8/firebase-auth.js";
+  
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyAFl4zPpywP0FvItwQ4-HLNf4TDYoHIS9M",
+      authDomain: "dissertation-pro.firebaseapp.com",
+      databaseURL: "https://dissertation-pro-default-rtdb.firebaseio.com",
+      projectId: "dissertation-pro",
+      storageBucket: "dissertation-pro.appspot.com",
+      messagingSenderId: "317585434115",
+      appId: "1:317585434115:web:a9e24f20ffba8b2f525036"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const database = getDatabase(app);
+    const auth = getAuth();
+  
+  
+    signup.addEventListener('click',(e) => {
+  
+      var email = document.getElementById('useremail').value
+      var password = document.getElementById('password').value
+      var firstname = document.getElementById('firstname').value
+      var lastname = document.getElementById('lastname').value
+  
+      createUserWithEmailAndPassword(auth, email, password)
+        .then((userCredential) => {
+        // Signed in 
+        const user = userCredential.user;
+  
+        set(ref(database, 'users/' + user.uid),{
+          firstname: firstname,
+          lastname: lastname,
+          email: useremail,
+        })
+  
+        console.log('User account was created successfully')
+        alert('User account created!')
+      })
+      .catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        alert(errorMessage);
+        console.log('Error: User account failed to be created!')
+      });
+  });
+  
+  login.addEventListener('click',(e)=>{
+    var email = document.getElementById('useremail').value
+    var password = document.getElementById('password').value
+    signInWithEmailAndPassword(auth, email, password)
+    .then((userCredential) => {
+      // Signed in 
+      const user = userCredential.user;
+  
+      const dt = new Date();
+      update(ref(database, 'users/' + user.uid),{
+          last_login: dt,
+        })
+        alert('user logged in')
+    })
+    .catch((error) => {
+      const errorCode = error.code;
+      const errorMessage = error.message;
+      alert(errorMessage);
+    });
+  });
+  </script>
+
+  <script>
+    document.getElementById("userfirstname").placeholder = firstname.uid;
+  </script>
+  
+
+
+</body>
+</html>

@@ -1,0 +1,571 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+input[type=text], input[type=password],
+input[type=email], input[type=number] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font: "Roboto", sans-serif !important;
+  background-color: #222222 !important;
+  color: #fff !important;
+  overflow-x: hidden;
+}
+
+.bodycontainer {
+  background-color: #222222;
+  color: ghostwhite;
+}
+
+.right-side button,
+button,
+.sign-up,
+.coursebtn {
+  color: #222222;
+  cursor: pointer;
+}
+
+.sign-out {
+  color: #fff;
+  background-color: red;
+}
+
+/* Ttile & Sub title! */
+.container-title {
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+.container-title h1 {
+  font-size: 50px;
+}
+
+.container-title p {
+  font-size: 20px;
+}
+
+.container-title > .content {
+  text-align: center;
+}
+
+.signup,
+.coursebtn {
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+  cursor: pointer;
+  border: none;
+}
+
+.sign-up {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.privacy-link a {
+  color: red;
+}
+
+.container b {
+  cursor: auto;
+}
+
+.container .start,
+h1,
+p {
+  text-align: center;
+}
+
+.animation {
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: 1px solid #2a9df4;
+}
+
+.animation:hover {
+  color: #2a9df4;
+  opacity: 1;
+  text-transform: uppercase;
+}
+
+.sign-up:is(:visited, :active) {
+  border-radius: 50%;
+  border: 1px solid #2a9df4;
+  text-transform: uppercase;
+}
+
+button {
+  border: none;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+
+/*Note: For the image, I used Pixabay! */
+.top-menu-bar {
+  background: -webkit-gradient(linear, left top, right top, from(#222222), color-stop(50%, rgba(0, 0, 0, 0.8))), url("/img/background.jpg");
+  background: linear-gradient(90deg, #222222, rgba(0, 0, 0, 0.8) 50%), url("/img/background.jpg");
+  color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+}
+
+.btn-container .left p {
+  text-align: left;
+}
+
+.btn-container .left {
+  padding-bottom: 3px;
+  position: absolute;
+}
+
+.btn-container {
+  padding-right: 13px;
+  text-align: right;
+  padding-top: 3px;
+}
+
+.account-container-btn {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.top-menu-bar img {
+  opacity: 0.3;
+}
+
+.advertisement-bg-right,
+.advertisement-bg-left {
+  /* Change this to a lighter dark colour */
+  background-color: black;
+  text-align: center;
+}
+
+.advertisement-bg-right > img {
+  height: 10%;
+  width: 70%;
+}
+
+.card > i {
+  text-align: center;
+  font-size: 26px;
+}
+
+.card:hover {
+  opacity: 0.7;
+  cursor: context-menu;
+}
+
+.newsletter {
+  background-color: #121111;
+}
+
+.wrapper-small {
+  padding-top: 50px;
+}
+
+.warning-info {
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.lgn,
+.register,
+.enroll {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+  color: #fff;
+}
+
+.container {
+  padding: 16px;
+}
+
+.forgot-password a {
+  color: #2a9df4;
+}
+
+span.forgot-password {
+  float: right;
+  padding-top: 16px;
+}
+
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s;
+}
+
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  overflow-x: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  list-style-type: none;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+  text-decoration: none;
+}
+
+.sidenav .sidenav h1, .sidenav h2 {
+  text-align: center;
+}
+
+.sidenav .logout-btn-container {
+  text-align: center;
+  padding-top: 6px;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  -webkit-transition: margin-left .5s;
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+.underline-animation,
+.col-sm a,
+.underline-anim {
+  position: relative;
+  color: #0087ca;
+}
+
+.underline-animation:after,
+.col-sm a:after,
+.underline-anim:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+  -webkit-transition: -webkit-transform 0.25s ease-out;
+  transition: -webkit-transform 0.25s ease-out;
+  transition: transform 0.25s ease-out;
+  transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
+}
+
+.underline-animation:hover:after,
+.col-sm a:hover:after,
+.underline-anim:hover:after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
+
+.underline-anim:hover {
+  text-transform: uppercase;
+}
+
+.navContainer a {
+  color: #2a9df4;
+}
+
+.active {
+  text-transform: uppercase;
+}
+
+.active:hover {
+  color: #2a9df4;
+  cursor: context-menu;
+}
+
+.enrollSection > h1, .enrollSection p {
+  text-align: center;
+}
+
+.enrollSection {
+  background-color: #121212;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.spacer {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.container-sm:hover .overlay {
+  opacity: 1;
+}
+
+.enrollSection h1 {
+  color: #2a9df4;
+  font-size: 50px;
+}
+
+.enrollSection .container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/*  Targets the SM container in element */
+.container-sm img {
+  opacity: 1;
+  height: 250px;
+  cursor: pointer;
+}
+
+.row {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.container-sm {
+  text-align: center;
+}
+
+.container-sm img:hover {
+  opacity: 0.8;
+}
+
+.coursebar-container {
+  background-color: #121212;
+  margin-inline: 30%;
+}
+
+.toolbar {
+  text-align: center;
+  color: #2a9df4;
+  border: 1px solid #2a9df4;
+}
+
+.footer-container {
+  padding-top: 30px;
+}
+
+footer {
+  background-color: #121212;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  border-top: 0.1px solid #2a9df4;
+  border-bottom: 0.1px solid #2a9df4;
+  margin: 0;
+}
+
+footer .container .row {
+  border: 1px solid #2a9df4;
+  background-color: #222222;
+}
+
+.icon-container {
+  text-align: center;
+}
+
+.icon-container b,
+.fa {
+  color: #2a9df4;
+}
+
+.fa-regular {
+  text-decoration: none;
+  color: #fff;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa:hover {
+  opacity: 0.7;
+  text-decoration: none;
+  color: #2a9df4;
+}
+
+.fa-facebook,
+.fa-twitter,
+.fa-instagram,
+.fa-google-plus {
+  color: #fff;
+}
+
+.col-sm a,
+.create-account a {
+  color: #2a9df4;
+}
+
+.col-sm h1 {
+  font-size: 30px;
+}
+
+.privacyBackground {
+  background-color: #f8f8f8;
+}
+
+.toolbar .fa {
+  color: #2a9df4;
+  text-transform: uppercase;
+  cursor: context-menu;
+}
+
+.toolbar .fa:hover {
+  color: #2a9df4;
+}
+
+.container-fluid {
+  margin: 0;
+}
+
+.account-settings {
+  text-align: left;
+}
+
+.row .social-media {
+  width: 100%;
+}
+
+.social-media h2 {
+  text-align: center;
+}
+
+.extra {
+  border: 1px solid #2a9df4;
+  border-top: none;
+  text-align: center;
+}
+
+/* Fixes the button not aligning correctly */
+.account-container-btn {
+  text-align: center;
+  width: 100%;
+}
+
+.extra p {
+  text-align: center;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.warning {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: red;
+}
+
+.text-warning {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#arrows {
+  text-decoration: none;
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */
